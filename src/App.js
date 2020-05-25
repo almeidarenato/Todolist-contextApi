@@ -15,9 +15,7 @@ const useStyles = makeStyles({
   listStyle: {
     marginBottom: "20px",
   },
-  cardStyle: {
-    width: "600px",
-  },
+  cardStyle: {},
 });
 
 function App() {
