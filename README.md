@@ -7,3 +7,7 @@ Para executá-lo digite:
 
 Roda o aplicativo em modo de desenvolvimento
 Abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador
+
+Projeto feito com uso de material-ui.
+
+<img src='./todolist.png' width='450px'>
