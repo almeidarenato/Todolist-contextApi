@@ -1,25 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TodoProvider from "./contexts/TodoContext";
+import TodoList from "./components/TodoList";
+import AddTodo from "./components/AddTodo";
+
+import { Container, Typography, Card, CardContent } from "@material-ui/core";
+import NavBar from "./components/NavBar";
+import "./App.css";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  header: {
+    marginBottom: "20px",
+  },
+  listStyle: {
+    marginBottom: "20px",
+  },
+  cardStyle: {
+    width: "600px",
+  },
+});
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <br />
+      <Container maxWidth="md">
+        <Card className={classes.cardStyle}>
+          <CardContent>
+            <Typography className={classes.header} variant="h3">
+              Lista de Atividades
+            </Typography>
+            <TodoProvider>
+              <TodoList />
+              <div className={classes.listStyle}></div>
+              <AddTodo />
+            </TodoProvider>
+          </CardContent>
+        </Card>
+      </Container>
+    </>
   );
 }
 
