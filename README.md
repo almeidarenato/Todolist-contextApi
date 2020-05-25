@@ -5,12 +5,15 @@ Projeto feito para demonstrar o uso de material-ui , react , react hooks e conte
 ## Como utilizar
 
 Projeto Feito com Create-React-App
-Para executá-lo digite:
+Para executá-lo de forma local digite na pasta raiz:
 
-### `yarn start`
+`yarn start`
 
-Roda o aplicativo em modo de desenvolvimento
-Abra [http://localhost:3000](http://localhost:3000) para visualizar em seu navegador
+ou
+
+`npm start`
+
+A aplicação irá executar no endereço [http://localhost:3000](http://localhost:3000).
 
 ## Demonstração
 
